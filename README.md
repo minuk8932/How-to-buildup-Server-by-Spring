@@ -1,5 +1,5 @@
 # What-is-ORM
-객체 관계 매핑(Object-relational mapping; ORM)은 데이터베이스와 객체 지향 프로그래밍 언어 간의 호환되지 않는 데이터를 변환하는 프로그래밍 기법이다. 객체 관계 매핑 라고도 부른다. 객체 지향 언어에서 사용할 수 있는 "가상" 객체 데이터베이스를 구축하는 방법이다. 객체 관계 매핑을 가능하게 하는 상용 또는 무료 소프트웨어 패키지들이 있고, 경우에 따라서는 독자적으로 개발하기도한다. 종류에는 Mybatis, Hybernate 등이 있음. (출처 : wikipedia)
+객체 관계 매핑(Object-relational mapping; ORM)은 데이터베이스와 객체 지향 프로그래밍 언어 간의 호환되지 않는 데이터를 변환하는 프로그래밍 기법이다. 객체 관계 매핑 라고도 부른다. 객체 지향 언어에서 사용할 수 있는 "가상" 객체 데이터베이스를 구축하는 방법이다. 객체 관계 매핑을 가능하게 하는 상용 또는 무료 소프트웨어 패키지들이 있고, 경우에 따라서는 독자적으로 개발하기도한다. 종류에는 Mybatis, Hibernate, JPA 등이 있음. (출처 : wikipedia)
 <br><br>
 
 # Spring Framework
@@ -15,4 +15,5 @@ ORM 프레임워크와의 연결고리를 제공한다.
 > - AOP : Aspect Oriented Programming / 공통로직을 별도의 공간에 따로 구현하고, 이를 런타임(실행시간)에 적용이 필요한 클래스 메소드에 프록시를 사용해 적용하는 기술을 말한다. 기존의 관점 지향 프로그래밍 프레임 워크인 AspectJ 또한 내부에서 사용가능하다.
 > - IoC/DI : Inversion of Control/Dependency Injection / 제어의 역전과 의존성 주입이라 번역이되는데, 이는 해당 컨테이너가 객체의 생성 및 관계설정, 의존성 주입을 통해 개발자가 직접하지 않고 프레임워크가 대신 맡아서 처리하는것을 말한다.
 
+<br>[그림 1] : Spring Triangle
 <img src="https://github.com/minuk8932/What-is-ORM/blob/master/img/spring-triangle.png" width=200>
