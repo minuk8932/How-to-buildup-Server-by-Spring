@@ -1,5 +1,6 @@
 # What-is-ORM
-객체 관계 매핑(Object-relational mapping; ORM)은 데이터베이스와 객체 지향 프로그래밍 언어 간의 호환되지 않는 데이터를 변환하는 프로그래밍 기법이다. 객체 관계 매핑 라고도 부른다. 객체 지향 언어에서 사용할 수 있는 "가상" 객체 데이터베이스를 구축하는 방법이다. 객체 관계 매핑을 가능하게 하는 상용 또는 무료 소프트웨어 패키지들이 있고, 경우에 따라서는 독자적으로 개발하기도한다. 종류에는 Mybatis, Hibernate, JPA 등이 있음. (출처 : wikipedia)
+객체 관계 매핑(Object-relational mapping; ORM)은 데이터베이스와 객체 지향 프로그래밍 언어 간의 호환되지 않는 데이터를 변환하는 프로그래밍 기법이다. 객체 관계 매핑 라고도 부른다. 객체 지향 언어에서 사용할 수 있는 "가상" 객체 데이터베이스를 구축하는 방법이다. 객체 관계 매핑을 가능하게 하는 상용 또는 무료 소프트웨어 패키지들이 있고, 경우에 따라서는 독자적으로 개발하기도한다. 프레임워크 종류에는 **Mybatis, Hibernate, iBatis, EclipseLink** 등이 있음. (출처 : wikipedia) <br>
+의의 : 코드의 반복적이고 지루한 부분을, 줄일 수 있고 SQL에 의존적인 코딩에서 벗어나, 생산적인 코딩이 가능하고, 유지보수가 편리해짐.
 <br><br>
 
 # Spring Framework
@@ -17,3 +18,9 @@ ORM 프레임워크와의 연결고리를 제공한다.
 
 [그림 1] Spring Triangle
 <img src="https://github.com/minuk8932/What-is-ORM/blob/master/img/spring-triangle.png" width=200>
+<br><br>
+
+# JPA
+Java Persistence API의 약자로, 자바 진영의 ORM 기술 표준이다. JPA는 application과 JDBC 사이에서 동작한다. JPA는 EJB(Enterprise Java Beans) 3.0에서 하이버네이트 기반으로 만들어진 ORM 기술에 대한 API 표준 명세다.(즉, 인터페이스들의 집합)
+<br><br>
+
