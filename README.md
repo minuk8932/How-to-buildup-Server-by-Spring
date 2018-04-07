@@ -3,6 +3,19 @@
 의의 : 코드의 반복적이고 지루한 부분을, 줄일 수 있고 SQL에 의존적인 코딩에서 벗어나, 생산적인 코딩이 가능하고, 유지보수가 편리해짐.
 <br><br>
 
+# MVC Pattern
+MVC Pattern은 스프링 프레임워크에서 자체적으로 지원되고 있다. Model, View, Controller를 의미하는 것으로 소프트웨어 디자인 패턴이다. MVC에서 모델은 애플리케이션의 정보(데이터)를 나타내며, 뷰는 텍스트, 체크박스 항목 등과 같은 사용자 인터페이스 요소를 나타내고, 컨트롤러는 데이터와 비즈니스 로직 사이의 상호동작을 관리한다. <br>
+*항목별로 좀 더 자세히 알아보면,* <br>
+> - Model : 데이터 저장소와 연동해 사용자가 입력한 데이터나 출력 할 데이터, 그리고 트랜잭션을 컨트롤한다. DAO, Service 클래스가 모델 구성요소에 해당한다.
+> - View : 모델이 처리한 데이터나 작업 결과를 가지고 화면을 띄워준다. 화면은 웹브라우저가 출력하고, 뷰 컴포넌트는 HTML/CSS/JavaScript를 사용해 웹 브라우저가 출력 할 UI를 생성한다. 일반적으로 HTML과 JSP를 통해 작성한다.
+> - Controller : 클라이언트의 요청을 실제 업무를 수행하는 모델 구성요소를 호출한다. 모델 호출 시 전달하기 쉽게 데이터를 가공해주고, 모델의 수행 결과를 통해 화면을 생성하도록 뷰에 전달한다. 일반적으로 Servlet JSP를 이용해 작성한다.
+- **모델**에 데이터에 대한 정의를 하고, 이를 실제로 보여주는것이 **뷰**, 그리고 데이터들을 처리하는 방식 또는 기능 등이 **컨트롤러**에 해당한다.
+
+<img src="https://github.com/minuk8932/What-is-JPA/blob/master/img/mvc-pattern.png" width=200>
+
+[그림 1] MVC Pattern
+<br><br>
+
 # Spring Framework
 자바 플랫폼을 위한 오픈소스 애플리케이션 프레임워크로서 간단히 스프링(Spring)이라고도 불린다.
 동적인 웹사이트를 개발하기 위한 여러가지 서비스를 제공하고 있다.
@@ -18,7 +31,7 @@ ORM 프레임워크와의 연결고리를 제공한다.
 
 <img src="https://github.com/minuk8932/What-is-ORM/blob/master/img/spring-triangle.png" width=200>
 
-[그림 1] Spring Triangle
+[그림 2] Spring Triangle
 <br><br>
 
 # JPA
@@ -59,3 +72,4 @@ Member member2 = jpa.find(memberId);  // DB 2회 접근
 6. 표준 : JPA는 표준 기술으로서, 다른 구현 기술로 손쉽게 변경이 가능하다.
 <br><br>
 
+해당 내용은 공부하며 지속적으로 수정해나갈 계획입니다.
