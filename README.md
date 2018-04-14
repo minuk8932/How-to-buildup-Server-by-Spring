@@ -1,3 +1,19 @@
+# Spring Road Map
+<img src="https://github.com/minuk8932/How-to-buildup-Server-by-Spring/blob/master/img/spring-road-map.png" width=200><br>
+[그림 1]스프링 로드맵
+<br><br>
+
+스프링 어떻게 공부해야 할까?<br>
+<br>
+**1. Java SE** : Java Standard Edition을 뜻하는 말이며, 자바의 밑바탕이 되는 것으로 스프링 프로젝트를 배우기 위해선 기본적으로 공부가 되어있어야한다.(알고리즘, 자료구조, 디자인패턴 등) 현 단계에선 최종적으로 앱 구현정도의 실력을 쌓아야한다. <br>
+**2. Servlet / JSP** : 웹에 관련된 일종의 네트워크 프로그래밍으로 보면된다.(소켓이 아닌 http 환경) **Web Basic**(html, javascript, css), **Model1**(프로토타입 구현), **Model2**(MVC pattern), Web Basic를 통해 **Ajax** 사용, Action tag 중 Custon tag인 **JSTL**(JSP 문법)을 공부해 사용하는 것을 목표로한다.<br>
+**3. Spring** : 사용 방식이 여러가지가 있어 개인이 직접 찾아보고 괜찮은 또는 스스로에게 알맞는 방법으로 구현 할 것. 웹/앱 모두 구현 가능. <br>
+**4. SQL mapper / ORM** : SQL mapper는 좀 더 편리한 데이터베이스 사용, ORM은 데이터베이스의 역할을 대신 해주며 기존보다 더 편리하게 구현 가능하게 해주는데 진입 장벽이 매우 높은편이다. 전자의 경우 **Mybatis**(aphache ibatis에서 구글로 넘어가면서 명칭 변경), 후자의 경우엔 **Hibernate**가 있다. <br>
+**5. Utility** : 생산성이 좋고 빠른 빌드 자동화 툴 **Ant**, 기능이 추가된 **Maven**(주로 사용됨), 프로젝트가(협업) 가능하도록 지원하는 **Subversion**, 단위 테스트(도중에 에러체크 또는 디버깅)가 가능한 **JUnit**이 있다. <br>
+<Br>
+이미지 출처 및 내용 참고 : [himan009dev 님의 Youtube 영상](https://www.youtube.com/watch?v=XJYrPMkTQtk&feature=youtu.be) (클릭하시면 해당 영상으로 이동합니다.)
+<br><br>
+
 # ORM
 객체 관계 매핑(Object-relational mapping; ORM)은 데이터베이스와 객체 지향 프로그래밍 언어 간의 호환되지 않는 데이터를 변환하는 프로그래밍 기법이다. 객체 관계 매핑 라고도 부른다. 객체 지향 언어에서 사용할 수 있는 "가상" 객체 데이터베이스를 구축하는 방법이다. 객체 관계 매핑을 가능하게 하는 상용 또는 무료 소프트웨어 패키지들이 있고, 경우에 따라서는 독자적으로 개발하기도한다. 대표적으로 **Hibernate**가 . (출처 : wikipedia) <br>
 의의 : 코드의 반복적이고 지루한 부분을, 줄일 수 있고 SQL에 의존적인 코딩에서 벗어나, 생산적인 코딩이 가능하고, 유지보수가 편리해짐.
@@ -11,9 +27,9 @@ MVC Pattern은 스프링 프레임워크에서 자체적으로 지원되고 있�
 > - Controller : 클라이언트의 요청을 실제 업무를 수행하는 모델 구성요소를 호출한다. 모델 호출 시 전달하기 쉽게 데이터를 가공해주고, 모델의 수행 결과를 통해 화면을 생성하도록 뷰에 전달한다. 일반적으로 Servlet JSP를 이용해 작성한다.
 - **모델**에 데이터에 대한 정의를 하고, 이를 실제로 보여주는것이 **뷰**, 그리고 데이터들을 처리하는 방식 또는 기능 등이 **컨트롤러**에 해당한다.
 
-<img src="https://github.com/minuk8932/What-is-JPA/blob/master/img/mvc-pattern.png" width=200>
+<img src="https://github.com/minuk8932/How-to-buildup-Server-by-Spring/blob/master/img/mvc-pattern.png" width=200>
 
-[그림 1] MVC Pattern
+[그림 2] MVC Pattern
 <br><br>
 
 # Spring Framework
@@ -29,9 +45,9 @@ ORM 프레임워크와의 연결고리를 제공한다.
 > - AOP : Aspect Oriented Programming / 공통로직을 별도의 공간에 따로 구현하고, 이를 런타임(실행시간)에 적용이 필요한 클래스 메소드에 프록시를 사용해 적용하는 기술을 말한다. 기존의 관점 지향 프로그래밍 프레임 워크인 AspectJ 또한 내부에서 사용가능하다. OOP를 좀 더 효율적으로 만들어 나가기위한 도구.
 > - IoC/DI : Inversion of Control/Dependency Injection / 제어의 역전과 의존성 주입이라 번역이되는데, 이는 해당 컨테이너가 객체의 생성 및 관계설정, 의존성 주입을 통해 개발자가 직접하지 않고 프레임워크가 대신 맡아서 처리하는것을 말한다.
 
-<img src="https://github.com/minuk8932/What-is-ORM/blob/master/img/spring-triangle.png" width=200>
+<img src="https://github.com/minuk8932/How-to-buildup-Server-by-Spring/blob/master/img/spring-triangle.png" width=200>
 
-[그림 2] Spring Triangle
+[그림 3] Spring Triangle
 <br><br>
 
 # JPA
