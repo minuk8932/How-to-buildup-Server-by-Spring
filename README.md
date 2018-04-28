@@ -33,7 +33,7 @@ MVC Pattern은 스프링 프레임워크에서 자체적으로 지원되고 있�
 <br><br>
 
 # DAO, DTO
-**DAO**: Data Access Object의 줄임말이다. Spring과 DB사이에 존재하여, DB를 사용해 데이터를 조회하거나 조작하는 기능을 담당하는 것들을 DAO라고 부른다. 도메인 로직(비즈니스 로직이나 DB와 관련없는 코드들)을 영속성 메커니즘과 분리하기 위해 사용한다. HTTP Request를 Web Application이 받게 되면 Thread를 생성하게 되는데 비즈니스 로직이 DB로부터 데이터를 얻어오기 위해 매번 Driver를 로드하고 Connection 객체를 생성하게 되면 엄청 많은 커넥션이 일어나므로 DAO를 하나 만들어 DB 전용 객체로만 사용해 성능을 높이기 위함이다. 이는 'Connection pool'의 개념에서 나왔다.
+**DAO**: Data Access Object의 줄임말이다. Spring과 DB사이에 존재하여, DB를 사용해 데이터를 조회하거나 조작하는 기능을 담당하는 것들을 DAO라고 부른다. 도메인 로직(비즈니스 로직이나 DB와 관련없는 코드들)을 영속성 메커니즘과 분리하기 위해 사용한다. HTTP Request를 Web Application이 받게 되면 Thread를 생성하게 되는데 비즈니스 로직이 DB로부터 데이터를 얻어오기 위해 매번 Driver를 로드하고 Connection 객체를 생성하게 되면 엄청 많은 커넥션이 일어나므로 DAO를 하나 만들어 DB 전용 객체로만 사용해 성능을 높이기 위함이다. 이는 'Connection pool'의 개념에서 나왔다.<br>
 **DTO**: Data Transfer Objec의 줄임말이다. VO(Value Object)라고도 불리는데, 계층간 데이터 교환을 위한 자바 빈즈다. 데이터베이스 레코드의 데이터를 매핑하기 위한 데이터 객체를 말하는데, DTO는 보통 로직을 가지고 있지 않고 data와 그 data에 접근을 위한 getter, setter만 가지고 있다.
 <br><br>
 
